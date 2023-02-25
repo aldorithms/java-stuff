@@ -1,7 +1,16 @@
-abstract class Vehicle 
+public abstract class Vehicle 
 {
     abstract void move();
+    
+    protected int yearOfManufacture;
+   
+    public Vehicle(int yearOfManufacture) 
+    {
+      this.yearOfManufacture = yearOfManufacture;
+    }
+      public abstract void accelerate();
 }
+
 public class Car extends Vehicle 
 {
     void move() 
